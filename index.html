@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CS1130 Assignments</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>CS 1130 - Introduction to Computing</h1>
+  <h3 style="margin-top:-10px; font-weight:normal; font-size:16px;">by: Sol Jinshen S. Lib-atin</h3>
+</header>
+<h1>Student Assignments</h1>
+
+
+<div class="assignment">
+
+<div class="assignment">
+<button class="collapsible">Assignment #1 - Conversions</button>
+<div class="content">
+<h3>Celsius to Fahrenheit</h3>
+<input id="celsius" type="number" placeholder="Celsius">
+<button onclick="convertCtoF()">Convert</button>
+<p id="c_to_f_result"></p>
+
+<h3>Fahrenheit to Celsius</h3>
+<input id="fahrenheit" type="number" placeholder="Fahrenheit">
+<button onclick="convertFtoC()">Convert</button>
+<p id="f_to_c_result"></p>
+
+<h3>Meters to Feet</h3>
+<input id="meters" type="number" placeholder="Meters">
+<button onclick="convertMtoF()">Convert</button>
+<p id="m_to_f_result"></p>
+
+<h3>Feet to Meters</h3>
+<input id="feet" type="number" placeholder="Feet">
+<button onclick="convertFtoM()">Convert</button>
+<p id="f_to_m_result"></p>
+</div></div>
+
+<div class="assignment">
+<button class="collapsible">Assignment #2 - Income Tax Calculator</button>
+<div class="content">
+<input id="income" type="number" placeholder="Enter income">
+<button onclick="computeTax()">Compute Tax</button>
+<p id="tax_result"></p>
+</div></div>
+
+<div class="assignment">
+<button class="collapsible">Assignment #3 - Loops</button>
+<div class="content">
+<h3>Factorial (While Loop)</h3>
+<input id="fact_n" type="number" placeholder="N">
+<button onclick="computeFactorial()">Compute</button>
+<p id="fact_result"></p>
+
+<h3>Sum (Do While Loop)</h3>
+<input id="sum_n" type="number" placeholder="N">
+<button onclick="computeSum()">Compute</button>
+<p id="sum_result"></p>
+
+<h3>Average (For Loop)</h3>
+<input id="avg_n" type="number" placeholder="N">
+<button onclick="computeAverage()">Compute</button>
+<p id="avg_result"></p>
+</div></div>
+
+<button class="collapsible">Assignment #4 - Simple Payroll</button>
+<div class="content">
+
+<h3>Add Employee Payroll Record</h3>
+<input id="emp_name" placeholder="Employee Name">
+<input id="days_worked" type="number" placeholder="Days Worked">
+<input id="daily_rate" type="number" placeholder="Daily Rate">
+<input id="deduction" type="number" placeholder="Deduction Amount">
+<button onclick="addPayroll()">Add Payroll</button>
+
+<h3>Delete Payroll Record</h3>
+<input id="delete_no" type="number" placeholder="Line Number to Delete">
+<button onclick="deletePayroll()">Delete</button>
+
+<h3>Payroll Table</h3>
+<table id="payroll_table" border="1" cellpadding="5" style="border-collapse:collapse; width:100%;">
+<thead>
+<tr>
+<th>No.</th><th>Employee Name</th><th>Days Worked</th><th>Daily Rate</th><th>Gross Pay</th><th>Deduction</th><th>Net Pay</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+</div></div>
+
+
+<script src="js/main.js"></script>
+</body></html>
